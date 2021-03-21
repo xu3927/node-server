@@ -20,8 +20,8 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint"
 	],
-	"workspaceFolder": "/home/node/workspace",
-	"workspaceMount": "type=bind,src=${localWorkspaceFolder},dst=/home/node/workspace",
+	// "workspaceFolder": "/home/node/workspace",
+	// "workspaceMount": "type=bind,src=${localWorkspaceFolder},dst=/home/node/workspace",
 		// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
