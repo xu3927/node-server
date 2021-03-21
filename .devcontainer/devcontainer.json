@@ -2,21 +2,17 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.163.1/containers/javascript-node
 {
 	"name": "Node Server",
-	"image": "vsc-node-server-1ab98793d1890032d55b92c3de6626ad",
-	// "build": {
-	// 	"dockerfile": "Dockerfile",
-	// 	// Update 'VARIANT' to pick a Node version: 10, 12, 14
-	// 	"args": { "VARIANT": "14" }
-	// },
+	// "image": "vsc-node-server-1ab98793d1890032d55b92c3de6626ad",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick a Node version: 10, 12, 14
+		"args": {
+			"VARIANT": "14"
+		}
+	},
 	// Set *default* container specific settings.json values on container create.
-	"containerEnv": {
-		"TestConEnv": "haha",
-		"RefLocal": "${localEnv:TTT}"
-	},
-	"remoteEnv": {
-		"TestRemoEnv": "xixi",
-		"RefEnv": "${containerEnv:TestConEnv}XX"
-	},
+	"containerEnv": {},
+	"remoteEnv": {},
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash"
 	},
