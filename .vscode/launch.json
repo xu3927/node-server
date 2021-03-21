@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "start",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            // 启动的入口文件
+            "program": "${workspaceFolder}/app/index.js"
+        }
+    ]
+}
