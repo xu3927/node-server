@@ -21,8 +21,8 @@
 		"dbaeumer.vscode-eslint"
 	],
 	"workspaceFolder": "/home/node/workspace",
-	"workspaceMount": "source=${localWorkspaceFolder}/..,target=/home/node/workspace,type=volume",
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"workspaceMount": "type=bind,src=/Users/zhichaoxu/code/node-server,dst=/home/node/workspace",
+		// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
