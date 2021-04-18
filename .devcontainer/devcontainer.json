@@ -2,14 +2,14 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.163.1/containers/javascript-node
 {
 	"name": "Node Server",
-	// "image": "vsc-node-server-1ab98793d1890032d55b92c3de6626ad",
-	"build": {
-		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick a Node version: 10, 12, 14
-		"args": {
-			"VARIANT": "14"
-		}
-	},
+	"image": "node-env",
+	// "build": {
+	// 	"dockerfile": "Dockerfile",
+	// 	// Update 'VARIANT' to pick a Node version: 10, 12, 14
+	// 	"args": {
+	// 		"VARIANT": "14"
+	// 	}
+	// },
 	// Set *default* container specific settings.json values on container create.
 	"containerEnv": {},
 	"remoteEnv": {},
@@ -20,8 +20,9 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint"
 	],
-	// "workspaceFolder": "/home/node/workspace",
-	// "workspaceMount": "type=bind,src=${localWorkspaceFolder},dst=/home/node/workspace",
+	"workspaceFolder": "/home/node/workspace",
+	// "workspaceMount": "type=bind,src=/root/data/node-server,dst=/home/node/workspace",
+	"workspaceMount": "source=/root/data/node-server,target=/home/node/workspace,type=bind,consistency=cached",
 		// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
